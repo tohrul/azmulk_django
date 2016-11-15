@@ -86,6 +86,7 @@ DATABASES = {
 
 #added from video tutorial:
 ACCOUNT_ACTIVATION_DAYS = 7
+LOGIN_REDIRECT_URL = '/accounts/profile/'
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
