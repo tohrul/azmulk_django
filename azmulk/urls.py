@@ -22,5 +22,7 @@ urlpatterns = [
     #include profiles:
     url(r'^profiles/', include('profiles.urls')),
     #added from video tutorial:
-    url(r'^login/$', auth_views.login, {'login' : 'templates/registration/login.html'}, name='login'),
+#    url(r'^login/$', auth_views.login, {'login' : 'templates/registration/login.html'}, name='login'),
+    #registration-redux
+    url(r'^accounts/', include('registration.backends.default.urls')),
 ]
