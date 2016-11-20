@@ -58,7 +58,9 @@ ROOT_URLCONF = 'azmulk.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #add os.path.join(BASE_DIR, 'tempaltes')
+        #in order to use templates in root.
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
