@@ -25,4 +25,5 @@ urlpatterns = [
 #    url(r'^login/$', auth_views.login, {'login' : 'templates/registration/login.html'}, name='login'),
     #registration-redux
     url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^adverts/', include('adverts.urls')),
 ]
